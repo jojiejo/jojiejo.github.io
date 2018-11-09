@@ -2,6 +2,7 @@
 const arrayOfWords = ['cucumber', 'tomatoes', 'avocado'];
 const complicatedArray = ['cucumber', 44, true];
 
+/* Function that makes All string uppercase */
 const makeAllCaps = (array) => {
 	return new Promise((resolve, reject) => {
 		let result = array.map((element) => {
@@ -17,6 +18,7 @@ const makeAllCaps = (array) => {
 	});
 };
 
+/* Function that sorts any array passed */
 const sortWords = (array) => {
 	return new Promise((resolve, reject) => {
 		let result = array.sort();
@@ -25,6 +27,7 @@ const sortWords = (array) => {
 	});
 };
 
+/* Execution */
 console.log(makeAllCaps(arrayOfWords));
 console.log(sortWords(arrayOfWords));
 
